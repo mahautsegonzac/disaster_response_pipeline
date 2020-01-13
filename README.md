@@ -42,6 +42,4 @@ I used the following libraries to clean the data, build and train the model, and
 
     go.html - template used when building the web app
     master.html - template used when building the web app
-
-### Summary
-
+    
