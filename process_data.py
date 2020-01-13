@@ -6,6 +6,14 @@ from sqlalchemy import create_engine
 
 
 def load_data(messages_filepath, categories_filepath):
+    '''
+    This function loads the two datasets needed for modeling
+    Arguments:
+        messages_filepath = path to disaster_messages csv file
+        categories_filepath = path to disaster_categories csv file
+    Output:
+        df = dataframe made of these two datasets
+    '''
     # load messages dataset
     messages = pd.read_csv(messages_filepath)
     # load categories dataset
@@ -15,6 +23,13 @@ def load_data(messages_filepath, categories_filepath):
     return df
 
 def clean_data(df):
+    '''
+    This function performs a series of cleaning actions to make the data ready for modeling
+    Arguments:
+        df = dataframe to clean
+    Output:
+        df = clean dataframe
+    '''
     # create a dataframe of the 36 individual category columns
     categories = df['categories'].str.split(';', expand=True)
 
@@ -46,10 +61,15 @@ def clean_data(df):
     df.drop_duplicates(inplace=True)
     # check number of duplicates
     print('{} duplicated rows after deletion'. format(df.duplicated().sum()))
-    
     return df
 
 def save_data(df, database_filename):
+    '''
+    This function saves the dataframe in a SQL database
+    Arguments:
+        df = dataframe to be loaded to the database
+        database_filename = path to database
+    '''
     engine = create_engine(database_filename)
     print(df.head())
     df.to_sql('messages_table', engine, if_exists='replace', index=False)
