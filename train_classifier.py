@@ -113,7 +113,7 @@ def save_model(model, model_filepath):
         pickle.dump(model, file)
 
 def main():
-    sys.argv = ['train_classifier.py', 'sqlite:///../data/DisasterResponse.db', 'tuned_classifier.pkl']
+    sys.argv = ['train_classifier.py', 'sqlite:///DisasterResponse.db', 'tuned_classifier.pkl']
     if len(sys.argv) == 3:
         database_filepath, model_filepath = sys.argv[1:]
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))

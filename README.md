@@ -12,7 +12,7 @@ The datasets I used contain real messages sent during disaster events and have b
     - Run the following commands in the project's root directory to set up the database and model : `python process_data.py`, `python train_classifier.py`.
 
 - Run the web app : 
-    - Run the following command in the app's directory to run your web app : `python run.py`
+    - Run the following command in the root directory to run the web app : `python run.py`
     - Go to http://0.0.0.0:3001/
 
 

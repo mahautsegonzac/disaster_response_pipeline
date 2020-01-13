@@ -71,7 +71,6 @@ def save_data(df, database_filename):
         database_filename = path to database
     '''
     engine = create_engine(database_filename)
-    print(df.head())
     df.to_sql('messages_table', engine, if_exists='replace', index=False)
     print(engine.table_names())
 
