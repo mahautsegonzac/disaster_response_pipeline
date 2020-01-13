@@ -1,8 +1,8 @@
 # Disaster Response Pipeline
 
 This project aims at classifying messages received during disaster events by category, so that they can be sent to the appropriate disaster relief agency.
-For this purpose, I have built a machine learning pipeline using a classifier performing speech recognition.
-This project also includes a web app where an emergency worker can input a new message and get classification results in several categories. 
+For this purpose, I have built a machine learning pipeline using a classifier which performs text recognition.
+The final output of this project is a web app where an emergency worker can input a new message and get classification results by category. 
 The datasets I used contain real messages sent during disaster events and have been provided by the company [Figure Eight](https://www.figure-eight.com/).
 
 
@@ -36,12 +36,23 @@ The following libraries need to be installed to clean the data, build and train 
 
 ### Files in Repository
 
-    process_data.py - contains an ETL, returning a clean dataset in a SQL database ('DisasterResponse.db')
-    train_classifier.py - contains a machine learning pipeline, preparing the text data in order to make it appropriate for modelisation and feeding a random forest classifier with the prepared data. This file returns the model saved as a pickle file.
-    run.py - creates the flask web app (this script has been entirely provided by Udacity)
+    process_data.py
+    Contains an ETL, returning a clean dataset in a SQL database ('DisasterResponse.db')
+    
+    train_classifier.py 
+    Contains a machine learning pipeline, preparing the text data in order to make it appropriate for modelisation and feeding a random forest classifier with the prepared data. This file returns the model saved as a pickle file.
+    
+    run.py
+    Creates the flask web app (this script has been entirely provided by Udacity)
 
-    disaster_categories.csv - csv file containing data related to the category assigned to each message
-    disaster_messages.csv - csv file containing data related to the content of the messages sent
+    disaster_categories.csv
+    Csv file containing data related to the category assigned to each message
+    
+    disaster_messages.csv
+    Csv file containing data related to the content of the messages sent
 
-    go.html - template used when building the web app
-    master.html - template used when building the web app
+    go.html
+    Template used when building the web app
+
+    master.html
+    Template used when building the web app
