@@ -19,7 +19,7 @@ The datasets I used contain real messages sent during disaster events and have b
 ### Libraries
 
 The data preparation and modeling have been executed in Python 3.7.5.
-I used the following libraries to clean the data, build and train the model, and create the web app:
+The following libraries need to be installed to clean the data, build and train the model, and create the web app:
 
     sys
     pickle
@@ -29,6 +29,9 @@ I used the following libraries to clean the data, build and train the model, and
     sklearn
     re
     nltk
+    flask
+    plotly
+    json
 
 
 ### Files in Repository
@@ -42,4 +45,3 @@ I used the following libraries to clean the data, build and train the model, and
 
     go.html - template used when building the web app
     master.html - template used when building the web app
-    
