@@ -40,16 +40,17 @@ The following libraries need to be installed to clean the data, build and train 
     Contains an ETL, returning a clean dataset in a SQL database ('DisasterResponse.db')
     
     train_classifier.py 
-    Contains a machine learning pipeline, preparing the text data in order to make it appropriate for modelisation and feeding a random forest classifier with the prepared data. This file returns the model saved as a pickle file.
+    Contains a machine learning pipeline, preparing the text data and feeding a random forest classifier with the prepared data. 
+    This file returns the model saved as a pickle file.
     
     run.py
-    Creates the flask web app (this script has been entirely provided by Udacity)
+    Creates the flask web app
 
     disaster_categories.csv
-    Csv file containing data related to the category assigned to each message
+    CSV file containing data related to the categories assigned to the received message
     
     disaster_messages.csv
-    Csv file containing data related to the content of the messages sent
+    CSV file containing data related to the content of the received messages
 
     go.html
     Template used when building the web app
