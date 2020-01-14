@@ -76,11 +76,11 @@ def build_model():
     
     # Run GridSearch on pipeline with chosen parameters and range of values
     parameters = {
-#         'model__estimator__n_estimators': [100, 500, 1000],
+        # 'model__estimator__n_estimators': [100, 500, 1000],
         'model__estimator__max_depth': [5, 15, 30],
         'model__estimator__min_samples_split':[2, 10, 15],
-#         'model__estimator__min_samples_leaf':[1, 2, 5, 10],
-        'model__estimator__bootstrap': [True, False]
+        # 'model__estimator__min_samples_leaf':[1, 2, 5, 10],
+        # 'model__estimator__bootstrap': [True, False]
     }
     
     # Build model with best combination of parameters
