@@ -56,7 +56,7 @@ The following libraries need to be installed to clean the data, build and train 
     SQLite database created by ETL
 
     tuned_classifier.pkl
-    Machine learnign model saved as a pickle file
+    Machine learning model saved as a pickle file
 
     go.html
     Template used when building the web app
