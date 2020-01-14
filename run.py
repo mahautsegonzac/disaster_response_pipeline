@@ -42,7 +42,8 @@ def index():
     genre_names = list(genre_counts.index)
     
     cats = df.drop(['id', 'original', 'message', 'genre'], axis = 1)
-    category_counts = pd.melt(cats).groupby('variable').sum().sort_values(by='value', ascending=False)
+    cats = pd.melt(cats).groupby('variable').sum().sort_values(by='value', ascending=False)
+    category_counts = cats['value']
     category_names = list(cats.index)
     
     # create visuals
