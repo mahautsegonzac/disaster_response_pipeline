@@ -52,6 +52,12 @@ The following libraries need to be installed to clean the data, build and train 
     disaster_messages.csv
     CSV file containing data related to the content of the received messages
 
+    DisasterResponse.db
+    SQLite database created by ETL
+
+    tuned_classifier.pkl
+    Machine learnign model saved as a pickle file
+
     go.html
     Template used when building the web app
 
